@@ -33,9 +33,10 @@ En vigueur le 18 octobre 2026 / Effective October 18, 2026</p>
 <code>com.jcorp.letterfall</code>), édité par JCorp, traite les informations.
 En résumé : <strong>JCorp n'a pas de serveur, ne collecte, ne vend ni ne
 partage aucune donnée personnelle.</strong> Le jeu affiche de la publicité
-fournie par Google AdMob, et utilise, si vous le souhaitez, Google Play Jeux
-(classements, réussites, sauvegarde) : ces deux services de Google traitent
-certaines données, décrites plus bas.</p>
+fournie par Google AdMob, utilise, si vous le souhaitez, Google Play Jeux
+(classements, réussites, sauvegarde), et, seulement quand vous jouez un duel en
+ligne, le service de jeu en réseau GD-Sync. Ces services traitent certaines
+données, décrites plus bas.</p>
 
 <h3>Données enregistrées sur votre appareil</h3>
 <p>Votre progression (scores, statistiques, mots de la Collection, série du
@@ -110,6 +111,23 @@ Jeux et le jeu fonctionne normalement. Vous pouvez vous déconnecter ou
 supprimer vos données de jeu depuis l'application ou les paramètres Google
 Play Jeux.</p>
 
+<h3>Duel en ligne (GD-Sync)</h3>
+<p>Le Duel peut se jouer en ligne contre un autre joueur (salon privé avec un
+code, ou adversaire au hasard). Ce mode utilise GD-Sync
+(<a href="https://www.gd-sync.com">gd-sync.com</a>), un service de relais pour
+jeux en réseau, et seulement pendant que vous l'utilisez :</p>
+<ul>
+<li>sont transmis : votre pseudo de duel (votre pseudo Google Play Jeux, ou
+« Joueur »), le code du salon, et les messages de la partie (attaques
+envoyées, remplissage de votre bocal, fin de partie). Votre adversaire voit
+votre pseudo ;</li>
+<li>comme pour toute connexion à Internet, GD-Sync voit l'adresse IP de
+l'appareil ;</li>
+<li>aucun compte n'est créé, et rien n'est conservé par JCorp. Le salon
+disparaît quand les deux joueurs l'ont quitté.</li>
+</ul>
+<p>Si vous ne jouez pas en ligne, rien n'est envoyé à GD-Sync.</p>
+
 <h3>Rappels</h3>
 <p>Le jeu peut afficher des rappels (par exemple « Ta série de 12 jours
 t'attend ! ») : ils sont programmés par votre téléphone lui-même, sans serveur,
@@ -126,7 +144,7 @@ presse-papiers ; c'est vous qui choisissez de le coller ou non.</p>
 profil Google Play Jeux, si vous l'utilisez).</li>
 <li>Pas de serveur JCorp, pas de vente de données, pas d'outil de statistiques
 ou de mesure d'audience en dehors de Google AdMob et de Google Play Jeux
-décrits plus haut.</li>
+décrits plus haut (GD-Sync sert seulement à relayer les duels en ligne).</li>
 <li>Pas d'accès à votre position GPS, à vos contacts, à vos photos, à votre
 micro ni à votre appareil photo.</li>
 <li>Pas d'achat intégré.</li>
@@ -135,7 +153,7 @@ micro ni à votre appareil photo.</li>
 <h3>Autorisations Android</h3>
 <table>
 <tr><th>Autorisation</th><th>Utilisation</th></tr>
-<tr><td>Internet, état du réseau</td><td>Heure du Défi du jour, Google Play Jeux, publicités.</td></tr>
+<tr><td>Internet, état du réseau</td><td>Heure du Défi du jour, Google Play Jeux, publicités, duel en ligne.</td></tr>
 <tr><td>Identifiant publicitaire (AD_ID)</td><td>Publicités Google AdMob (voir plus haut).</td></tr>
 <tr><td>Notifications</td><td>Rappels du Défi du jour (Android 13 et plus : vous choisissez de l'autoriser).</td></tr>
 <tr><td>Vibreur</td><td>Retours haptiques (désactivables dans les Options).</td></tr>
@@ -164,8 +182,9 @@ date d'entrée en vigueur.</p>
 <code>com.jcorp.letterfall</code>), published by JCorp, handles information.
 In short: <strong>JCorp has no server and does not collect, sell or share any
 personal data.</strong> The game shows ads provided by Google AdMob and, if you
-wish, uses Google Play Games (leaderboards, achievements, cloud save): these two
-Google services process some data, described below.</p>
+wish, uses Google Play Games (leaderboards, achievements, cloud save) and, only
+when you play an online duel, the GD-Sync multiplayer service. These services
+process some data, described below.</p>
 
 <h3>Data stored on your device</h3>
 <p>Your progress (scores, statistics, Collection words, Daily Challenge
@@ -232,6 +251,22 @@ Without a Play Games sign-in, nothing is sent to Play Games and the game works
 normally. You can sign out or delete your game data from the Google Play Games
 app or settings.</p>
 
+<h3>Online duel (GD-Sync)</h3>
+<p>The Duel can be played online against another player (private room with a
+code, or a random opponent). This mode uses GD-Sync
+(<a href="https://www.gd-sync.com">gd-sync.com</a>), a relay service for
+multiplayer games, and only while you use it:</p>
+<ul>
+<li>what is sent: your duel name (your Google Play Games gamer name, or
+"Player"), the room code, and the game messages (attacks sent, how full your
+jar is, end of the game). Your opponent sees your name;</li>
+<li>as with any Internet connection, GD-Sync sees the device's IP
+address;</li>
+<li>no account is created and JCorp keeps nothing. The room disappears once
+both players have left it.</li>
+</ul>
+<p>If you don't play online, nothing is sent to GD-Sync.</p>
+
 <h3>Reminders</h3>
 <p>The game may show reminders (for example "Your 12-day streak is
 waiting!"): they are scheduled by your phone itself, with no server, and
@@ -247,7 +282,8 @@ clipboard; you decide whether to paste it anywhere.</p>
 <li>No LetterFall account or sign-up (only your Google Play Games profile,
 if you use it).</li>
 <li>No JCorp server, no data selling, no analytics or audience measurement
-tools other than Google AdMob and Google Play Games described above.</li>
+tools other than Google AdMob and Google Play Games described above (GD-Sync
+only relays online duels).</li>
 <li>No access to your GPS location, contacts, photos, microphone or camera.</li>
 <li>No in-app purchases.</li>
 </ul>
@@ -255,7 +291,7 @@ tools other than Google AdMob and Google Play Games described above.</li>
 <h3>Android permissions</h3>
 <table>
 <tr><th>Permission</th><th>Use</th></tr>
-<tr><td>Internet, network state</td><td>Daily Challenge time, Google Play Games, ads.</td></tr>
+<tr><td>Internet, network state</td><td>Daily Challenge time, Google Play Games, ads, online duel.</td></tr>
 <tr><td>Advertising ID (AD_ID)</td><td>Google AdMob ads (see above).</td></tr>
 <tr><td>Notifications</td><td>Daily Challenge reminders (Android 13 and later: you choose whether to allow it).</td></tr>
 <tr><td>Vibrate</td><td>Haptic feedback (can be turned off in Options).</td></tr>
